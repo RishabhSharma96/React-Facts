@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.8rem;
+    background-color: black;
+    box-shadow: 0px 10px 8px rgb(243, 238, 238);
+    height: 25vh;
+}
+
+.nav-img {
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.nav-title {
+    font-size: 3.5rem;
+    color: rgb(191, 191, 238);
+    font-weight: bolder;
+}
+
+.mid-section {
+    background-color: rgb(43, 42, 42);
+    padding-left: 5%;
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.mid-section::before {
+    content: "";
+    background-image: url('../images/logo512.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+    bottom: 0px;
+    left: 83%;
+    opacity: 0.3;
+}
+
+.head-title {
+    font-size: 2.8rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.mid-section ul li {
+    font-size: 1.5rem;
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
+ul li::marker {
+    color: rgb(191, 191, 238);
+    font-size: 1.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(191, 191, 238);
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 5vh;
+}
+
+@media(max-width:700px) {
+    .mid-section::before {
+        opacity: 0.1;
+        top: 12rem;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+@media(max-width:550px) {
+    .nav-title{
+        font-size: 2.2rem;
+    }
+    .nav-img{
+        width: 5rem;
+    }
+    .head-title {
+        font-size: 2.2rem;
+    }
+    
+    .mid-section ul li {
+        font-size: 1.1rem;
+    }
+    .mid-section::before {
+        background-image: url("../images/logo192.png");
+    }
+}
+
+@media(max-width:370px) {
+    .nav-title{
+        font-size: 2rem;
+    }
+    .nav-img{
+        width: 4rem;
+    }
+    .head-title {
+        font-size: 2rem;
+    }
+    
+    .mid-section ul li {
+        font-size: 1rem;
+    }
+    
+}
